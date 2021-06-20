@@ -1,0 +1,36 @@
+/*
+ * SASS Tutorial
+*/
+
+/* Body */
+body {
+  font-weight: weight(regular);
+}
+
+/* Main Content */
+.main {
+  width: 80%;
+  margin: 0 auto;
+
+  #{&}__paragraph_a {
+    font-weight: weight(bold);
+
+    &:hover {
+      color: $success-color;
+    }
+  }
+
+  #{&}__paragraph_b {
+    @extend .main__paragraph_a;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+
+  @include flexCenter;
+
+  @include mobile-view {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,29 @@
+// Default Colors
+$primary-color: #11c6ff;
+$success-color: #21b531;
+$warning-color: #ffaf37;
+$danger-color: #e3424e;
+
+//theme-color
+$black-theme : #000000;
+$white-theme : #ffffff;
+
+// font-weights
+$font-weight: (
+  "regular": 400,
+  "medium": 500,
+  "semibold": 600,
+  "bold": 700,
+);
+
+// Default Text Colors
+$color-white: #ffffff;
+$color-black: #000000;
+
+//Mobile
+$mobile-size : 378px;
+
+// function
+@function weight($weight-name) {
+  @return map-get($map: $font-weight, $key: $weight-name)
+}

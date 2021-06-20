@@ -1,0 +1,12 @@
+// Mixin
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin mobile-view {
+    @media (max-width: $mobile-size) {
+        @content
+    }
+}
